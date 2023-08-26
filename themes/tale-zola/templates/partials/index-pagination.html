@@ -1,0 +1,11 @@
+<div class="pagination">
+    {% if paginator.previous -%}
+    <a href="{{ paginator.previous | safe }}" class="left arrow">&#8592;</a>
+    {%- endif %}
+    {% if paginator.previous or paginator.next -%}
+    <span>{{ paginator.current_index }} / {{ paginator.number_pagers }}</span>
+    {%- endif %}
+    {% if paginator.next -%}
+    <a href="{{ paginator.next | safe }}" class="right arrow">&#8594;</a>
+    {%- endif %}
+</div>
