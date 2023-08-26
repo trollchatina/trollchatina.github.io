@@ -28,3 +28,11 @@ paths_keep_dates = true
 # Put all your custom variables here
 author = "Facehugger Collective"
 footer = true
+
+[[extra.menu]]
+url = "archive"
+name = "Archive"
+
+[[extra.menu]]
+url = "about"
+name = "About"
